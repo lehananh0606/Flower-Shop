@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Long Flower Farm</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            div {
+               padding: 50px 50px;
+  background-image: url('https://top10hagiang.com/wp-content/uploads/2022/09/shop-hoa-tuoi-ha-giang-1.jpg');
+}
+            h1{
+                color: black;
+                font-family: fantasy;
+                text-align: center;
+                 box-shadow: 0px 0px 8px black;            
+                border-radius: 5px;
+                justify-content: center;
+                align-items: center;
+                padding: 50px 0;
+                margin: 0 280px;
+                background-color: goldenrod;
+                font-size: 45px;
+            }
+            .row{
+                justify-content: center;
+                font-family: cursive;
+                font-size: 25px;
+            }
+            .col-md-4{
+                display: flex;
+                margin: 50px 60px;
+                text-align: center;
+                 box-shadow: 0px 0px 40px whitesmoke;            
+                border-radius: 5px;
+                justify-content: center;
+                align-items: center;
+                padding: 50px 0;
+                background-color: blanchedalmond;
+            }
+            .col-md-1{
+                margin: 50px 90px;
+                text-align: center;
+                 box-shadow: 0px 0px 40px whitesmoke;       
+                border-radius: 5px;
+                justify-content: center;
+                align-items: center;
+                padding: 50px 0;
+                background-color: blanchedalmond;
+            }
+        </style>
+    </head>
+    
+    <body style="background-color:#E9E9E9;">
+        <div class="container">
+        <div >
+            <h1>Welcome to Flower Store</h1>
+        </div>
+        <form action="MainController" method="POST"> 
+            <div class="row">
+            <div class="col-md-4">
+                <select name = "cmbProduct">
+                    <option value="F001-Red Rose-500">Red Rose- 500$</option>
+                    <option value="F002-Pink Orchird-600">Pink Orchird- 600$</option>
+                    <option value="F003-Tiny Bloss-40">Tiny Bloss- 40$</option>
+                    <option value="F004-Sun Flower-1000">Sun Flower- 1000$</option>           
+                </select>
+            </div>
+            
+            <div class="col-md-1">
+                <select name="cmbQuantity">
+                    <option value="1">1 bo</option>
+                    <option value="2">2 bo</option>
+                    <option value="3">3 bo</option>
+                    <option value="4">4 bo</option>
+                    <option value="5">5 bo</option>
+                    <option value="10">10 bo</option>
+                </select>
+            </div>
+           
+            <div class="col-md-1">
+                <input type="submit" name="action" value="Add"/>
+            </div>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>

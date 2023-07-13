@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Create User</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            
+            h1{
+                box-shadow: 0px 0px 8px black;
+                text-align: center;
+                border-radius: 5px;
+                margin: 0 530px;
+                justify-content: center;
+                align-items: center;
+                padding: 50px 0;
+                background-color: goldenrod;
+                font-family: fantasy;
+                font-size: 34px;
+            }
+            .col-md-6{
+                box-shadow: 0px 0px 8px black;
+                text-align: center;
+                border-radius: 5px;
+                margin: 0 50px;
+                justify-content: center;
+                align-items: center;
+                padding: 50px 0;
+                 background-color: honeydew;
+            }
+            .row2 img{
+                width:60%;
+            }
+            .row2{
+                width: 80%;
+                display: flex;
+                justify-content: space-evenly;
+                align-self: center;
+                font-size: 36px;
+               margin-left: 130px;
+            }
+            .col-md-12{
+                
+                text-align: center;
+                
+                justify-content: center;
+                align-items: center;
+                padding: 50px 0;
+               
+            }
+        </style>
+    </head>
+    <body>
+        <h1>User Information</h1>
+        <div class="row">
+            
+            <form action="MainController" method="POST">
+                <div class="col-md-12">
+                User ID <input type="text" name="userID" required=""/></br>
+                Full Name <input type="text" name="fullName" required=""/></br>
+                Role ID <input type="text" name="roleID" value="US" readonly=""/></br>
+                Password <input type="password" name="password" required=""/></br>
+                Confirm <input type="password" name="confirm" required=""/></br>
+                <input type="submit" name="action" value="Create"/>
+                <input type="reset" value="Reset"/> 
+                  </div>
+            </form>
+          
+        </div>
+        <div class="row2">
+            <div class="col-md-6">
+                <a href="login.html">Login Page</a></br>
+                <img src="https://www.shutterstock.com/image-vector/man-key-near-computer-account-260nw-1499141258.jpg" alt="Login Page"/>
+            </div>
+            <div class="col-md-6">
+                <a href="shopping.html">Long Flower Store</a></br>
+                <img src="https://cdn.shopify.com/s/files/1/0278/0003/products/SPG2605x5FlowerShop.jpg?v=1625506124" alt="Long Flower Store">
+
+            </div>
+        </div>
+    </body>
+</html>
